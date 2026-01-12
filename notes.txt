@@ -1,0 +1,7 @@
+LD_PRELOAD="${LD_PRELOAD} /path/to/your/library.so" %command%
+dlsym(RTLD_NEXT, ...)
+
+https://optumsoft.com/dangers-of-using-dlsym-with-rtld_next/
+
+static void* handle = dlopen("something.so",RTLD_LAZY);
+void* (*origFunction)(args) = dlsym(handle,"function");
