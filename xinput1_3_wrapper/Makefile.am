@@ -1,0 +1,6 @@
+# ... other Makefile.am content ...
+AUTOMAKE_OPTIONS = foreign
+bin_PROGRAMS = xinput1_3_wrapper.dll
+xinput1_3_wrapper_dll_SOURCES = main.c
+SUBDIRS = ./wine
+# ...

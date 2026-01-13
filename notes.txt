@@ -5,3 +5,5 @@ https://optumsoft.com/dangers-of-using-dlsym-with-rtld_next/
 
 static void* handle = dlopen("something.so",RTLD_LAZY);
 void* (*origFunction)(args) = dlsym(handle,"function");
+
+wine/configure --enable-win64
